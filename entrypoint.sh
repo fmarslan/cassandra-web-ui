@@ -23,19 +23,19 @@ else
 fi
 
 #PASSWORD
-if [[ ! -v CASSANDRA_PASSOWRD ]]; then
-  CASSANDRA_PASSOWRD="cassandra"
+if [[ ! -v CASSANDRA_PASSWORD ]]; then
+  CASSANDRA_PASSWORD="cassandra"
 else
-  CASSANDRA_PASSOWRD="${CASSANDRA_PASSWORD}"
+  CASSANDRA_PASSWORD="${CASSANDRA_PASSWORD}"
 fi
 
 if [[ ! -v WEB_UI_PORT ]]; then
-  WEB_UI_PORT="80"
+  WEB_UI_PORT="3000"
 else
   WEB_UI_PORT="${WEB_UI_PORT}"
 fi
 
-COMMAND="cassandra-web --hosts $CASSANDRA_HOST --port $CASSANDRA_PORT --username $CASSANDRA_USERNAME --password $CASSANDRA_PASSOWRD --bind $WEB_UI_PORT"
+COMMAND="cassandra-web --hosts $CASSANDRA_HOST --port $CASSANDRA_PORT --username $CASSANDRA_USERNAME --password $CASSANDRA_PASSWORD --bind $WEB_UI_PORT"
 
 echo $COMMAND 
 
