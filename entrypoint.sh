@@ -30,7 +30,7 @@ else
 fi
 
 if [[ ! -v WEB_UI_PORT ]]; then
-  WEB_UI_PORT="3000"
+  WEB_UI_PORT="80"
 else
   WEB_UI_PORT="${WEB_UI_PORT}"
 fi
