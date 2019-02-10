@@ -1,4 +1,4 @@
-this is a docker image to [cassandra-web](https://github.com/avalanche123/cassandra-web)
+This is a docker image to [cassandra-web](https://github.com/avalanche123/cassandra-web)
 
 ## Environments
 * CASSANDRA_HOST *(default : 127.0.0.1)*
